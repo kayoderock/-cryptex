@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sureife.cryptex.NewActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            >
+
+            <TextView
+                android:textColor="@color/colorPrimary"
+                android:text="Title"
+                android:gravity="left"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                />
+
+            <EditText
+                android:id="@+id/et_title"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="16dp"
+                />
+
+            <TextView
+                android:textColor="@color/colorPrimary"
+                android:text="Content"
+                android:gravity="left"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                />
+
+            <EditText
+                android:id="@+id/et_content"
+                android:textAlignment="textStart"
+                android:gravity="start"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginBottom="16dp"
+                />
+
+            <Button
+                android:id="@+id/btn_save"
+                android:textColor="#fff"
+                android:text="Save"
+                android:layout_gravity="right"
+                android:layout_width="100dp"
+                android:background="@color/colorPrimary"
+                android:layout_height="50dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>
